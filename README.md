@@ -1,5 +1,5 @@
 
-Here’s a detailed description of a Catering Reservation and Ordering System that you can use for a GitHub repository:
+
 
 Catering Reservation and Ordering System
 Overview
