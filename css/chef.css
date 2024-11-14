@@ -1,0 +1,109 @@
+/* Chef Menu */
+
+.chef_menu {
+    display: inline-block;
+    width: 100%;
+    vertical-align: text-top;
+    margin: 16px 0px 24px 0px;
+}
+
+.chef_menu .title {
+    width: 100%;
+    font-size: 28px;
+    line-height: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f1f1f;
+    text-align: center;
+    margin: -15px auto;
+    padding: 16px;
+}
+
+.chef_menu .title p {
+    padding-top: 12px;
+}
+
+/* Chef Content */
+
+.chef-content {
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
+    margin-top: 12px;
+    margin-bottom: 28px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.chef-row {
+    margin: 0px -5px;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.chef-column {
+    float: center;
+    width: 33.33%;
+    padding: 0px 10px;
+}
+
+.chef-card {
+    border-radius: 6px;
+    background-color: #dddddddd;
+}
+
+.chef-card:hover {
+    transform: translateY(-12px);
+    transition: 0.4s ease-out;
+}
+
+.chef-card h3 {
+    padding-top: 12px;
+}
+
+.chef-card p {
+    font-size: 16px;
+    color: #000;
+}
+
+/* Images */
+
+.column img {
+    background-image: center center no-repeat; 
+    background-position: fixed; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height:650px; 
+    margin-top: -30px;
+    margin-bottom: -33px;
+}
+
+.chef-image img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-image: " ";
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    max-height: 200px;
+}
+
+@media screen and (max-width: 767px) {
+    .chef-column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .chef-card {
+        text-align: center;
+    }
+    .chef-card h3 {
+        margin: 6px;
+    }
+}

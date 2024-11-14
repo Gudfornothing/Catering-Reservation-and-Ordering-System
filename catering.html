@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--JQ-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/catering.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--Top-->
+<button onclick="topFunction()" id="topBtn" title="Go to Top">&#8679;</button>
+<!--Banner-->
+<div id="banner" class="banner">
+    <div class="banner-wrap">
+        <div class="notice-text">
+            We are open and available for takeout and delivery.
+            <a href="tel:925-300-3000"> 925-300-3000</a>
+        </div>
+    </div>
+</div>
+<!--Navigation-->
+<nav id="navigation" class="navbar" role="banner">
+    <div class="navigation-container">
+        <div class="navigation-left">
+            <a class="brand" href="index.html" aria-current="page">
+                <h2>Catering Reservation and Ordering System</h2>
+            </a>
+        </div>
+        <div class="navigation-right">
+                <div class="nav-menu" role="navigation" style="transform: translateY(0px) translateX(0px);">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="order.html">Order</a>
+                    <a class="nav-link" href="special.html">Special Offers</a>
+                    <a class="nav-link" href="catering.html">Catering</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="mailto:hello@website.com?subject=Hi">Email</a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa fa-list"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="order.html">Order</a>
+                    <a href="special.html">Offers</a>
+                    <a href="catering.html">Catering</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About Us</a>
+                    <a href="mailto:hello@website.com?subject=Hi">Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-flex">
+    <h1 class="title">Catering</h1>
+    <div class="row" style="text-align: left; width: 100%;">
+    <p>Catering Reservation and Ordering System has many options for catering. We offer to-go orders, private party catering, and full-service catering. 
+        We can work within your budget to create the best menu to satisfy your guests.</p>
+    <p>Our location can seat up to 300 guests in-house or up to 150 guests on our outdoor patio.</p>
+    </div>
+    <!--Modal Button-->
+    <button id="myBtn" class="myBtn" style="margin-top: 50px;">Book an Event</button>
+    <!--Modal-->
+    <div id="myModal1" class="modal">
+        <!--Modal Content-->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-row">
+                <div class="col-50">
+                  <div class="modal-container">
+                    <form action="/action_page.php" method="post">
+                        <h3 class="modal-title">Book an Event</h3>
+                        
+                      <div class="modal-row">
+                        <div class="row">
+                          <div class="col-50">
+                          <label for="fname">
+                              <i class="fa fa-user"></i> Full Name
+                          </label>
+                          <input type="text" id="fname" name="fullname" placeholder="Full Name">
+                          </div>
+                          <div class="col-50">
+                          <label for="phone">
+                              <i class="fa fa-phone"></i> Phone
+                          </label>
+                          <input type="text" id="phone" name="phone" placeholder="Phone">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                        <div class="col-50">
+                          <label for="tdate">
+                              <i class="fa fa-calendar-o"></i> Today's Date
+                          </label>
+                          <input type="text" id="tdate" name="todaysdate" placeholder="Today's Date">
+                        </div>
+                        <div class="col-50">
+                          <label for="orderdate">
+                              <i class="fa fa-calendar-o"></i> Order due Date
+                          </label>
+                          <input type="text" id="orderdate" name="orderdate" placeholder="Order due date">
+                        </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-50">
+                            <label for="eventdate">Date of Event</label>
+                            <input type="text" id="eventdate" name="eventdate" placeholder="Date of Event">
+                          </div>
+                          <div class="col-50">
+                            <label for="eventtime">Time of Event</label>
+                            <input type="text" id="eventtime" name="eventtime" placeholder="Time of Event">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+                              <label for="eventlocation">Event Location</label>
+                              <input type="text" id="eventlocation" name="eventlocation" placeholder="Event Location">
+                            </div>
+                            <div class="col-50">
+                              <label for="eventtype">Type of Event</label>
+                              <input type="text" id="eventtype" name="eventtype" placeholder="Type of Event">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+                              <label for="guestnum">Number of Guests</label>
+                              <input type="text" id="guestnum" name="guestnum" placeholder="Number of Guests">
+                            </div>
+                            <div class="col-50">
+                              <label for="pickup">Pick Up Time</label>
+                              <input type="text" id="pickup" name="pickup" placeholder="Pick Up Time">
+                            </div>
+                        </div>
+                      </div>
+                      <label for="delivery"><b>Delivery Method</b></label>
+                        <input type="checkbox" checked="none" name="sameadr"> For Pick Up
+                        <input type="checkbox" checked="none" name="sameadr"> For Delivery
+                        <br>
+                      <input type="submit" value="Book Event" class="btn">
+                    </form>
+                  </div>
+                </div>
+              
+                <div class="col-25">
+                  <div class="modal-container">
+                    <h4 class="modal-title">Our Catering Services</h4>
+                    <br>    
+                    <p style="color: #000;">24-7 Food Service</p>
+                    <p style="color: #000;">Online Food Order Booking</p>
+                    <p style="color: #000;">Credit and Debit Card Payment</p>
+                  </div>
+                </div>
+              </div> 
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<footer id="footer" class="footer">
+    <div class="w-layout-grid footer-grid">
+        <div class="footer-column" style="text-align: center;">
+            <h2 class="footer-title" style="margin: 10px;">Hours of Operation</h2>
+            <p class="footer-item">
+                <strong>Monday to Thursday</strong>
+                <br>
+                <span style="font-size: 15px;">11:00am - 9:00pm</span>
+            </p>
+            <p class="footer-item">
+                <strong>Friday &amp; Saturday</strong>
+                <br>
+                <span style="font-size: 15px;">11:00am - 10:00pm</span>
+            </p>
+            <p class="footer-item">
+                <strong>Sunday</strong>
+                <br>
+                <span style="font-size: 15px;">11:00am - 8:00pm</span>
+            </p>
+            <em class="footer-item">Call us for reservations and take out orders at <a href="tel:925-300-3000"> 925-300-3000</a></em>
+        </div>
+        <div class="footer-column" style="text-align: center;">
+            <h2 class="footer-title" style="margin: 10px;">Address</h2>
+            <p class="footer-item">
+                <strong>300 South First St.</strong>
+                <br>
+                <span style="font-size: 15px">Livermore, Ca 94550</span>
+            </p>
+            <p class="footer-item" style="text-align: center;">
+                <strong>Telephone</strong>
+                <br>
+                <a href="tel:925-300-3000">925-300-3000</a>
+            </p>
+            <br>
+            <div class="social-icon-wrap">
+                <a class="social-link facebook" href="#"><i class="fa fa-facebook"></i><span></span></a>
+                <a class="social-link twitter" href="#"><i class="fa fa-twitter"></i><span></span></a>
+                <a class="social-link yelp" href="#"><i class="fa fa-yelp"></i><span></span></a>
+            </div>
+        </div>
+    </div>
+<div class="footer-legal">
+<div class="legal">&copy; 2024 All Rights Reserved</div>
+</div>
+</footer>
+<!--JS-->
+<script type="text/javascript" src="js/catering.js"></script>
+<script type="text/javascript" src="js/top.js"></script>
+</body>
+</html>

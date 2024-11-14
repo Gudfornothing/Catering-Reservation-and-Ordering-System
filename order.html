@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--JQ-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/order.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--Top-->
+<button onclick="topFunction()" id="topBtn" title="Go to Top">&#8679;</button>
+<!--Banner-->
+<div id="banner" class="banner">
+    <div class="banner-wrap">
+        <div class="notice-text">
+            We are open and available for takeout and delivery.
+            <a href="tel:925-300-3000"> 925-300-3000</a>
+        </div>
+    </div>
+</div>
+<!--Navigation-->
+<nav id="navigation" class="navbar" role="banner">
+    <div class="navigation-container">
+        <div class="navigation-left">
+            <a class="brand" href="index.html" aria-current="page">
+                <h2>Catering Reservation and Ordering System</h2>
+            </a>
+        </div>
+        <div class="navigation-right">
+                <div class="nav-menu" role="navigation" style="transform: translateY(0px) translateX(0px);">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="order.html">Order</a>
+                    <a class="nav-link" href="special.html">Specials</a>
+                    <a class="nav-link" href="catering.html">Catering</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="mailto:hello@website.com?subject=Hi">Email</a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa fa-list"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="order.html">Order</a>
+                    <a href="special.html">Specials</a>
+                    <a href="catering.html">Catering</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About Us</a>
+                    <a href="mailto:hello@website.com?subject=Hi">Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-flex"><!--Container Flex-->
+    <div class="main_menu"><!--Main Menu-->
+        <h2 class="title">Menu</h2>
+        <!--Tab Links-->
+        <div class="tab">
+            <button class="tablinks" onclick="openMenu(event, 'Burger')">Burgers</button>
+            <button class="tablinks" onclick="openMenu(event, 'Salad')">Salads</button>
+            <button class="tablinks" onclick="openMenu(event, 'Side')">Sides/Starters</button>
+            <button class="tablinks" onclick="openMenu(event, 'Drink')">Drinks</button>
+            <button class="tablinks" onclick="openMenu(event, 'Kids')">Kids Menu</button>
+        </div>
+        <!--Tab Content-->
+        <!--Burger Menu-->
+        <div id="Burger" class="tab-content">
+            <h3>Burgers</h3>
+            <span onclick="this.parentElement.style.display='none'" style="float: right; margin-top: -22px; cursor: pointer;">x</span>
+            <!--Burger Content-->
+            <div class="menu-content">
+                <!--Menu Row-->
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/sk-uVPV_nV17Tw-unsplash.jpg">
+                            </div>
+                            <h3>Chicken Caesar Burger</h3>
+                            <p>The Chicken Caesar Burger retains the fresh taste of chicken coupled with lettuce, onions, and pickles.</p>
+                            <div class="price-block">
+                                <div class="price">$12.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/amirali-mirhashemian-uhgJYtrO3fY-unsplash.jpg">
+                            </div>
+                            <h3>Cheese Burger</h3>
+                            <p>The classic Cheese Burger comes with your choice of cheese with lettuce, tomatoes, onions, and ketchup.</p>
+                            <div class="price-block">
+                                <div class="price">$10.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/taco-sliders-4.jpg">
+                            </div>
+                            <h3>Taco Sliders</h3>
+                            <p>Taco meat and cheese baked with garlic butter and served with guacamole and slasa with your choice of cheese in a lightly toasted package.</p>
+                            <div class="price-block">
+                                <div class="price">$15.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/image.jpg">
+                            </div>
+                            <h3>Black Bean Burger</h3>
+                            <p>A meatless burger featuring black beans, swiss cheese, hot sauce, guacamole, tomatoes, and butter.</p>
+                            <div class="price-block">
+                                <div class="price">$12.50</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Menu Row-->
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/6ae7bb6884557ad507f4f8d446738ead10-06-impossible-burger-umami.rsquare.w700.jpg">
+                            </div>
+                            <h3>Impossible Burger</h3>
+                            <p>A vegan option with mayonnaise, lettuce and tomatoes.</p>
+                            <div class="price-block">
+                                <div class="price">$12.50</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/amirali-mirhashemian-7NYn7YfpaZo-unsplash.jpg">
+                            </div>
+                            <h3>Breakfast Burger</h3>
+                            <p>Start your day with our Breakfast Burger, served with egg, bacon, tomatoes, relish and mayonnaise.</p>
+                            <div class="price-block">
+                                <div class="price">$15.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/food-photographer-david-fedulov-E94j3rMcxlw-unsplash.jpg">
+                            </div>
+                            <h3>Bacon Cheese Burger</h3>
+                            <p>The popular Bacon Cheese Burger served with hot sauce, bacon, lettuce, tomatoes, and onions.</p>
+                            <div class="price-block">
+                                <div class="price">$13.50</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/amirali-mirhashemian-88YAXjnpvrM-unsplash.jpg">
+                            </div>
+                            <h3>Double Bacon Burger</h3>
+                            <p>The Double Bacon Burger comes complete with the a two pattys held together with your choice of cheese, bacon, hot sauce, and peppers.</p>
+                            <div class="price-block">
+                                <div class="price">$15.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Menu Row-->
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/crispy-fish-burger-with-jalapeno-tartare-sauce-50486970.jpg">
+                            </div>
+                            <h3>Crispy Fish Burger</h3>
+                            <p>This burger combines mayonnaise, dijon mustard, jalapenos, and tartare sauce on cripy fish  to make a tasty combo.</p>
+                            <div class="price-block">
+                                <div class="price">$19.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/da45a557841333bcbcb1813e05f28f4c.jpg">
+                            </div>
+                            <h3>Steak Frites Burger</h3>
+                            <p>A whole steakhouse burger with black pepper, salt, and steak fries.</p>
+                            <div class="price-block">
+                                <div class="price">$16.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Burger Content End-->
+
+            <!--Modal Button-->
+            <button id="myBtn" class="myBtn">Order</button>
+            <!--Modal-->
+            <div id="myModal1" class="modal">
+                <!--Modal Content-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-row">
+                        <div class="col-75">
+                          <div class="modal-container">
+                            <form action="/action_page.php">
+                      
+                              <div class="modal-row">
+                                <div class="col-50">
+                                  <h3>Billing Address</h3>
+                                  <label for="fname">
+                                      <i class="fa fa-user"></i> Full Name
+                                  </label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                                  <label for="email">
+                                      <i class="fa fa-envelope"></i> Email
+                                  </label>
+                                  <input type="text" id="email" name="email" placeholder="Email">
+                                  <label for="adr">
+                                      <i class="fa fa-address-card-o"></i> Address
+                                  </label>
+                                  <input type="text" id="adr" name="address" placeholder="Address">
+                                  <label for="city">
+                                      <i class="fa fa-institution"></i> City
+                                  </label>
+                                  <input type="text" id="city" name="city" placeholder="City">
+                      
+                                  <div class="row">
+                                    <div class="col-50">
+                                      <label for="state">State</label>
+                                      <input type="text" id="state" name="state" placeholder="State">
+                                    </div>
+                                    <div class="col-50">
+                                      <label for="zip">Zip</label>
+                                      <input type="text" id="zip" name="zip" placeholder="Zip">
+                                    </div>
+                                  </div>
+                                </div>
+                      
+                                <div class="col-50">
+                                  <h3>Payment</h3>
+                                  <label for="fname"><i class="fa fa-credit-card"></i> Accepted Cards</label>
+                                  <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                  </div>
+                                  <label for="cname">Name on Card</label>
+                                  <input type="text" id="cname" name="cardname" placeholder="Name on Card">
+                                  <label for="ccnum">Credit Card Number</label>
+                                  <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+                                  <label for="expmonth">Exp Month</label>
+                                  <input type="text" id="expmonth" name="expmonth" placeholder="Exp Month">
+                      
+                                  <div class="row">
+                                    <div class="col-50">
+                                      <label for="expyear">Exp Year</label>
+                                      <input type="text" id="expyear" name="expyear" placeholder="0000">
+                                    </div>
+                                    <div class="col-50">
+                                      <label for="cvv">CVV</label>
+                                      <input type="text" id="cvv" name="cvv" placeholder="000">
+                                    </div>
+                                  </div>
+                                </div>
+                      
+                              </div>
+                              <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                              </label>
+                              <input type="submit" value="Continue to checkout" class="btn">
+                            </form>
+                          </div>
+                        </div>
+                      
+                        <div class="col-25">
+                          <div class="modal-container">
+                            <h4 class="price">Cart
+                                <i class="fa fa-shopping-cart"></i>
+                                <b>10</b>
+                            </h4>    
+                            <p><a href="#">Chicken Caesar Burger</a> <span class="price">$12.00</span></p>
+                            <p><a href="#">Cheese Burger</a> <span class="price">$10.00</span></p>
+                            <p><a href="#">Taco Sliders</a> <span class="price">$15.00</span></p>
+                            <p><a href="#">Black Bean Burger</a> <span class="price">$12.50</span></p>
+                            <p><a href="#">Impossible Burger</a> <span class="price">$12.50</span></p>
+                            <p><a href="#">Breakfast Burger</a> <span class="price">$15.00</span></p>
+                            <p><a href="#">Bacon Cheese Burger</a> <span class="price">$13.50</span></p>
+                            <p><a href="#">Double Bacon Cheese Burger</a> <span class="price">$15.00</span></p>
+                            <p><a href="#">Crispy Fish Burger</a> <span class="price">$19.00</span></p>
+                            <p><a href="#">Steak Frites Burger</a> <span class="price">$16.00</span></p>
+                            <br>
+                            <hr>
+                            <p style="color: #000;">Total <span class="price"><b>$140.5</b></span></p>
+                          </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+        
+        <!--Salad Menu-->    
+        <div id="Salad" class="tab-content">
+            <h3>Salads</h3>
+            <span onclick="this.parentElement.style.display='none'" style="float: right; margin-top: -22px; cursor: pointer;">x</span>
+            <!--Salad Content-->
+            <div class="menu-content">
+                <!--Menu Row-->
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/raphael-nogueira-63mHpYEyjCA-unsplash.jpg">
+                            </div>
+                            <h3>Caesar Salad</h3>
+                            <p>The Classic Caesar Salad with mayonnaise, dijon mustard, chicken, lettuce, garlic, salt and pepper.</p>
+                            <div class="price-block">
+                                <div class="price">$12.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/cobb_salad_1.jpg">
+                            </div>
+                            <h3>Cobb Salad</h3>
+                            <p>The Cobb Salad comes with chicken, eggs, bacon, tomatoes, and avocado.</p>
+                            <div class="price-block">
+                                <div class="price">$10.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/TURKEY-SALAD-TWO-WAYS.jpg">
+                            </div>
+                            <h3>Turkey Salad Two Ways</h3>
+                            <p>Turkey salad tossed together with mozzarella, roasted peppers and green olives. Comes with either Tomato and Pesto, or Spicy Anchovy Garlic.</p>
+                            <div class="price-block">
+                                <div class="price">$15.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/Supreme Pasta Salad_2019-04-10_8701_TSUCALAS.jpg">
+                            </div>
+                            <h3>Italian Pasta Salad</h3>
+                            <p>Rotini Patsa with broccoli, carrots, bell pepers, and tomatoes.</p>
+                            <div class="price-block">
+                                <div class="price">$14.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Salad Content End-->
+
+            <!--Modal Button-->
+            <button id="myBtn" class="myBtn">Order</button>
+            <!--Modal-->
+            <div id="myModal2" class="modal">
+                <!--Modal Content-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-row">
+                        <div class="col-75">
+                          <div class="modal-container">
+                            <form action="/action_page.php">
+                      
+                              <div class="modal-row">
+                                <div class="col-50">
+                                  <h3>Billing Address</h3>
+                                  <label for="fname">
+                                      <i class="fa fa-user"></i> Full Name
+                                  </label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                                  <label for="email">
+                                      <i class="fa fa-envelope"></i> Email
+                                  </label>
+                                  <input type="text" id="email" name="email" placeholder="Email">
+                                  <label for="adr">
+                                      <i class="fa fa-address-card-o"></i> Address
+                                  </label>
+                                  <input type="text" id="adr" name="address" placeholder="Address">
+                                  <label for="city">
+                                      <i class="fa fa-institution"></i> City
+                                  </label>
+                                  <input type="text" id="city" name="city" placeholder="City">
+                      
+                                  <div class="row">
+                                    <div class="col-50">
+                                      <label for="state">State</label>
+                                      <input type="text" id="state" name="state" placeholder="State">
+                                    </div>
+                                    <div class="col-50">
+                                      <label for="zip">Zip</label>
+                                      <input type="text" id="zip" name="zip" placeholder="Zip">
+                                    </div>
+                                  </div>
+                                </div>
+                      
+                                <div class="col-50">
+                                  <h3>Payment</h3>
+                                  <label for="fname"><i class="fa fa-credit-card"></i> Accepted Cards</label>
+                                  <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                  </div>
+                                  <label for="cname">Name on Card</label>
+                                  <input type="text" id="cname" name="cardname" placeholder="Name on Card">
+                                  <label for="ccnum">Credit Card Number</label>
+                                  <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+                                  <label for="expmonth">Exp Month</label>
+                                  <input type="text" id="expmonth" name="expmonth" placeholder="Exp Month">
+                      
+                                  <div class="row">
+                                    <div class="col-50">
+                                      <label for="expyear">Exp Year</label>
+                                      <input type="text" id="expyear" name="expyear" placeholder="0000">
+                                    </div>
+                                    <div class="col-50">
+                                      <label for="cvv">CVV</label>
+                                      <input type="text" id="cvv" name="cvv" placeholder="000">
+                                    </div>
+                                  </div>
+                                </div>
+                      
+                              </div>
+                              <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                              </label>
+                              <input type="submit" value="Continue to checkout" class="btn">
+                            </form>
+                          </div>
+                        </div>
+                      
+                        <div class="col-25">
+                          <div class="modal-container">
+                            <h4 class="price">Cart
+                                <i class="fa fa-shopping-cart"></i>
+                                <b>4</b>
+                            </h4>    
+                            <p><a href="#">Caesar Salad</a> <span class="price">$12.00</span></p>
+                            <p><a href="#">Cobb Salad</a> <span class="price">$10.00</span></p>
+                            <p><a href="#">Turkey Salad Two Ways</a> <span class="price">$15.00</span></p>
+                            <p><a href="#">Italian Pasta Salad</a> <span class="price">$14.00</span></p>
+                            <br>
+                            <hr>
+                            <p style="color: #000;">Total <span class="price"><b>$41.00</b></span></p>
+                          </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+
+        <!--Sides Menu-->
+        <div id="Side" class="tab-content">
+            <h3>Sides/Starters</h3>
+            <span onclick="this.parentElement.style.display='none'" style="float: right; margin-top: -22px; cursor: pointer;">x</span>
+            <!--Sides Content-->
+            <div class="menu-content">
+                <!--Menu Row-->
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/louis-hansel-shotsoflouis-vi0kZuoe0-8-unsplash.jpg">
+                            </div>
+                            <h3>Regular Fries</h3>
+                            <p>Classic french fries served with ranch or ketchup along with salt and pepper.</p>
+                            <div class="price-block">
+                                <div class="price">$9.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/kanan-khasmammadov-8pUytjGU-E0-unsplash.jpg">
+                            </div>
+                            <h3>Potato Wedges</h3>
+                            <p>Cripsy potato wedges served with thousand island, salt and pepper.</p>
+                            <div class="price-block">
+                                <div class="price">$10.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/sweet-potato-fries.jpg">
+                            </div>
+                            <h3>Sweet Potato Fries</h3>
+                            <p>Sweet baked potato fries served with olive oil, garlic, ranch and or ketchup along with salt and pepper.</p>
+                            <div class="price-block">
+                                <div class="price">$9.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/abby-kale-ZyhYzS-56JQ-unsplash.jpg">
+                            </div>
+                            <h3>Steak Fries</h3>
+                            <p>The steak fries come with steak seasoning, olive oil, and your choise of either ranch or ketchup.</p>
+                            <div class="price-block">
+                                <div class="price">$10.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Menu Row-->
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/crispy-onion-strings-copy_cropped-scaled.jpg">
+                            </div>
+                            <h3>Crispy Onion Strings</h3>
+                            <p>Served with hickory bbq sauce, ketchup or buttermilk ranch.</p>
+                            <div class="price-block">
+                                <div class="price">$8.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/Buffalo-Wings-square-FS-55.jpg">
+                            </div>
+                            <h3>Buffalo Wings</h3>
+                            <p>Served with hand-breaded cauliflower florets and your choice of buffalo sauce, ketchup, or buttermilk ranch.</p>
+                            <div class="price-block">
+                                <div class="price">$10.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/Airfryer-Parmesan-Dill-Fried-Pickle-Chips-The-Creative-Bite-4-copy.jpg">
+                            </div>
+                            <h3>Fried Dill Pickles</h3>
+                            <p>Served with ketchup or buttermilk ranch.</p>
+                            <div class="price-block">
+                                <div class="price">$8.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/OCR-Z-SCHOOL-LUNCHES2-1016-1.jpg">
+                            </div>
+                            <h3>Tater Tots</h3>
+                            <p>Served with pimento cheese, bacon, scallions, and either kethup or buttermilk ranch.</p>
+                            <div class="price-block">
+                                <div class="price">$9.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div><!--Sides Content End-->
+
+            <!--Modal Button-->
+            <button id="myBtn" class="myBtn">Order</button>
+            <!--Modal-->
+            <div id="myModal3" class="modal">
+                <!--Modal Content-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-row">
+                        <div class="col-75">
+                          <div class="modal-container">
+                            <form action="/action_page.php">
+                      
+                              <div class="modal-row">
+                                <div class="col-50">
+                                  <h3>Billing Address</h3>
+                                  <label for="fname">
+                                      <i class="fa fa-user"></i> Full Name
+                                  </label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                                  <label for="email">
+                                      <i class="fa fa-envelope"></i> Email
+                                  </label>
+                                  <input type="text" id="email" name="email" placeholder="Email">
+                                  <label for="adr">
+                                      <i class="fa fa-address-card-o"></i> Address
+                                  </label>
+                                  <input type="text" id="adr" name="address" placeholder="Address">
+                                  <label for="city">
+                                      <i class="fa fa-institution"></i> City
+                                  </label>
+                                  <input type="text" id="city" name="city" placeholder="City">
+                      
+                                  <div class="row">
+                                    <div class="col-50">
+                                      <label for="state">State</label>
+                                      <input type="text" id="state" name="state" placeholder="State">
+                                    </div>
+                                    <div class="col-50">
+                                      <label for="zip">Zip</label>
+                                      <input type="text" id="zip" name="zip" placeholder="Zip">
+                                    </div>
+                                  </div>
+                                </div>
+                      
+                                <div class="col-50">
+                                  <h3>Payment</h3>
+                                  <label for="fname"><i class="fa fa-credit-card"></i> Accepted Cards</label>
+                                  <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                  </div>
+                                  <label for="cname">Name on Card</label>
+                                  <input type="text" id="cname" name="cardname" placeholder="Name on Card">
+                                  <label for="ccnum">Credit Card Number</label>
+                                  <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+                                  <label for="expmonth">Exp Month</label>
+                                  <input type="text" id="expmonth" name="expmonth" placeholder="Exp Month">
+                      
+                                  <div class="row">
+                                    <div class="col-50">
+                                      <label for="expyear">Exp Year</label>
+                                      <input type="text" id="expyear" name="expyear" placeholder="0000">
+                                    </div>
+                                    <div class="col-50">
+                                      <label for="cvv">CVV</label>
+                                      <input type="text" id="cvv" name="cvv" placeholder="000">
+                                    </div>
+                                  </div>
+                                </div>
+                      
+                              </div>
+                              <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                              </label>
+                              <input type="submit" value="Continue to checkout" class="btn">
+                            </form>
+                          </div>
+                        </div>
+                      
+                        <div class="col-25">
+                          <div class="modal-container">
+                            <h4 class="price">Cart
+                                <i class="fa fa-shopping-cart"></i>
+                                <b>8</b>
+                            </h4>    
+                            <p><a href="#">Regular Fries</a> <span class="price">$9.00</span></p>
+                            <p><a href="#">Potato Fries</a> <span class="price">$10.00</span></p>
+                            <p><a href="#">Sweet Potato Fries</a> <span class="price">$9.00</span></p>
+                            <p><a href="#">Steak Fries</a> <span class="price">$10.00</span></p>
+                            <p><a href="#">Fried Onion Strings</a> <span class="price">$8.00</span></p>
+                            <p><a href="#">Buffalo Wings</a> <span class="price">$10.00</span></p>
+                            <p><a href="#">Fried Dill Pickles</a> <span class="price">$8.00</span></p>
+                            <p><a href="#">Tater Tots</a> <span class="price">$9.00</span></p>
+                            <br>
+                            <hr>
+                            <p style="color: #000;">Total <span class="price"><b>$73.00</b></span></p>
+                          </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+        
+        <!--Drinks Menu-->
+        <div id="Drink" class="tab-content">
+            <h3>Drinks</h3>
+            <span onclick="this.parentElement.style.display='none'" style="float: right; margin-top: -22px; cursor: pointer;">x</span>
+            <!--Drinks Content-->
+            <div class="menu-content">
+                <!--Menu Row-->
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/sebastian-coman-photography-rwBJaJdesGg-unsplash.jpg">
+                            </div>
+                            <h3>Strawberry Milkshake</h3>
+                            <p>Classic strawberry flavored shake.</p>
+                            <div class="price-block">
+                                <div class="price">$10.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/pixzolo-photography-OPncjOLjXis-unsplash.jpg">
+                            </div>
+                            <h3>Oreo Milkshake</h3>
+                            <p>Oreo flavored shake with chocolate syrup and chips.</p>
+                            <div class="price-block">
+                                <div class="price">$10.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/mobile_hg-chilla-in-vanilla-milkshake.jpg">
+                            </div>
+                            <h3>Vanilla Milkshake</h3>
+                            <p>Classic vanilla milkshake.</p>
+                            <div class="price-block">
+                                <div class="price">$10.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/116168_1387.jpg">
+                            </div>
+                            <h3>Mint Milkshake</h3>
+                            <p>Mint flavored milkshake with chocolate sprinkles.</p>
+                            <div class="price-block">
+                                <div class="price">$10.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Menu Row-->
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/jonny-caspari-sQNq223Rr54-unsplash.jpg">
+                            </div>
+                            <h3>Soda</h3>
+                            <p>Coke&reg;, Diet Coke&reg;, Sprite&reg;, fresh-brewed iced tea.</p>
+                            <div class="price-block">
+                                <div class="price">$7.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/serenity-mitchell-uY4ZZZQ7uGE-unsplash.jpg">
+                            </div>
+                            <h3>Water</h3>
+                            <p>Topo Chico&reg;, Aqua Fina&reg;</p>
+                            <div class="price-block">
+                                <div class="price">$7.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/radovan-XDW56oKSCHw-unsplash.jpg">
+                            </div>
+                            <h3>Alcohol</h3>
+                            <p>Corona&reg; Extra, Blue Moon&reg;, Sam Adams Seasonal, 
+                                Not Your Fathers Root Beer, Stella Artois&reg; Belgian Lager
+                            </p>
+                            <div class="price-block">
+                                <div class="price">$8.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Drinks Content End-->
+
+            <!--Modal Button-->
+            <button id="myBtn" class="myBtn">Order</button>
+            <!--Modal-->
+            <div id="myModal4" class="modal">
+                <!--Modal Content-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-row">
+                        <div class="col-75">
+                          <div class="modal-container">
+                            <form action="/action_page.php">
+                      
+                              <div class="modal-row">
+                                <div class="col-50">
+                                  <h3>Billing Address</h3>
+                                  <label for="fname">
+                                      <i class="fa fa-user"></i> Full Name
+                                  </label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                                  <label for="email">
+                                      <i class="fa fa-envelope"></i> Email
+                                  </label>
+                                  <input type="text" id="email" name="email" placeholder="Email">
+                                  <label for="adr">
+                                      <i class="fa fa-address-card-o"></i> Address
+                                  </label>
+                                  <input type="text" id="adr" name="address" placeholder="Address">
+                                  <label for="city">
+                                      <i class="fa fa-institution"></i> City
+                                  </label>
+                                  <input type="text" id="city" name="city" placeholder="City">
+                      
+                                  <div class="row">
+                                    <div class="col-50">
+                                      <label for="state">State</label>
+                                      <input type="text" id="state" name="state" placeholder="State">
+                                    </div>
+                                    <div class="col-50">
+                                      <label for="zip">Zip</label>
+                                      <input type="text" id="zip" name="zip" placeholder="Zip">
+                                    </div>
+                                  </div>
+                                </div>
+                      
+                                <div class="col-50">
+                                  <h3>Payment</h3>
+                                  <label for="fname"><i class="fa fa-credit-card"></i> Accepted Cards</label>
+                                  <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                  </div>
+                                  <label for="cname">Name on Card</label>
+                                  <input type="text" id="cname" name="cardname" placeholder="Name on Card">
+                                  <label for="ccnum">Credit Card Number</label>
+                                  <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+                                  <label for="expmonth">Exp Month</label>
+                                  <input type="text" id="expmonth" name="expmonth" placeholder="Exp Month">
+                      
+                                  <div class="row">
+                                    <div class="col-50">
+                                      <label for="expyear">Exp Year</label>
+                                      <input type="text" id="expyear" name="expyear" placeholder="0000">
+                                    </div>
+                                    <div class="col-50">
+                                      <label for="cvv">CVV</label>
+                                      <input type="text" id="cvv" name="cvv" placeholder="000">
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                              </label>
+                              <input type="submit" value="Continue to checkout" class="btn">
+                            </form>
+                          </div>
+                        </div>
+                      
+                        <div class="col-25">
+                          <div class="modal-container">
+                            <h4 class="price">Cart
+                                <i class="fa fa-shopping-cart"></i>
+                                <b>6</b>
+                            </h4>    
+                            <p><a href="#">Strawberry Milkshake</a> <span class="price">$10.00</span></p>
+                            <p><a href="#">Oreo Milkshake</a> <span class="price">$10.00</span></p>
+                            <p><a href="#">Vanilla Milkshake</a> <span class="price">$10.00</span></p>
+                            <p><a href="#">Mint Milkshake</a> <span class="price">$10.00</span></p>
+                            <p><a href="#">Soda</a> <span class="price">$7.00</span></p>
+                            <p><a href="#">Water</a> <span class="price">$7.00</span></p>
+                            <p><a href="#">Alcohol</a> <span class="price">$8.00</span></p>
+                            <br>
+                            <hr>
+                            <p style="color: #000;">Total <span class="price"><b>$62.00</b></span></p>
+                          </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+
+        <!--Kids Menu-->
+        <div id="Kids" class="tab-content">
+            <h3>Kids Menu</h3>
+            <span onclick="this.parentElement.style.display='none'" style="float: right; margin-top: -22px; cursor: pointer;">x</span>
+            <!--Kids Content-->
+            <div class="menu-content">
+                <!--Menu Row-->
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/118513_640x428.jpg">
+                            </div>
+                            <h3>Mini Cheeseburgers</h3>
+                            <p>Two well done mini burgers with american cheese, pickles, and ketchup.</p>
+                            <div class="price-block">
+                                <div class="price">$9.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/kateryna-t-vf_VYpSb-dI-unsplash.jpg">
+                            </div>
+                            <h3>Grilled Cheese</h3>
+                            <p>American cheese and sourdough bread.</p>
+                            <div class="price-block">
+                                <div class="price">$9.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/lunch-dinner_starters_country-chicken-tenders-2.jpg">
+                            </div>
+                            <h3>Chicken Tenders</h3>
+                            <p>Hand-breaded, served with ranch or bbq sauce.</p>
+                            <div class="price-block">
+                                <div class="price">$9.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-column">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="images/PBJ-Triangles-w-fruit-iStock.jpg">
+                            </div>
+                            <h3>PB and J</h3>
+                            <p>Sourdough bread, grape jelly, and creamy peanut butter.</p>
+                            <div class="price-block">
+                                <div class="price">$9.00</div>
+                                <a class="card-button button" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Kids Content End-->
+
+            <!--Modal Button-->
+            <button id="myBtn" class="myBtn">Order</button>
+            <!--Modal-->
+            <div id="myModal5" class="modal">
+                <!--Modal Content-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-row">
+                        <div class="col-75">
+                          <div class="modal-container">
+                            <form action="/action_page.php">
+                      
+                              <div class="modal-row">
+                                <div class="col-50">
+                                  <h3>Billing Address</h3>
+                                  <label for="fname">
+                                      <i class="fa fa-user"></i> Full Name
+                                  </label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                                  <label for="email">
+                                      <i class="fa fa-envelope"></i> Email
+                                  </label>
+                                  <input type="text" id="email" name="email" placeholder="Email">
+                                  <label for="adr">
+                                      <i class="fa fa-address-card-o"></i> Address
+                                  </label>
+                                  <input type="text" id="adr" name="address" placeholder="Address">
+                                  <label for="city">
+                                      <i class="fa fa-institution"></i> City
+                                  </label>
+                                  <input type="text" id="city" name="city" placeholder="City">
+                      
+                                  <div class="row">
+                                    <div class="col-50">
+                                      <label for="state">State</label>
+                                      <input type="text" id="state" name="state" placeholder="State">
+                                    </div>
+                                    <div class="col-50">
+                                      <label for="zip">Zip</label>
+                                      <input type="text" id="zip" name="zip" placeholder="Zip">
+                                    </div>
+                                  </div>
+                                </div>
+                      
+                                <div class="col-50">
+                                  <h3>Payment</h3>
+                                  <label for="fname"><i class="fa fa-credit-card"></i> Accepted Cards</label>
+                                  <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                  </div>
+                                  <label for="cname">Name on Card</label>
+                                  <input type="text" id="cname" name="cardname" placeholder="Name on Card">
+                                  <label for="ccnum">Credit Card Number</label>
+                                  <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+                                  <label for="expmonth">Exp Month</label>
+                                  <input type="text" id="expmonth" name="expmonth" placeholder="Exp Month">
+                      
+                                  <div class="row">
+                                    <div class="col-50">
+                                      <label for="expyear">Exp Year</label>
+                                      <input type="text" id="expyear" name="expyear" placeholder="0000">
+                                    </div>
+                                    <div class="col-50">
+                                      <label for="cvv">CVV</label>
+                                      <input type="text" id="cvv" name="cvv" placeholder="000">
+                                    </div>
+                                  </div>
+                                </div>
+                      
+                              </div>
+                              <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                              </label>
+                              <input type="submit" value="Continue to checkout" class="btn">
+                            </form>
+                          </div>
+                        </div>
+                      
+                        <div class="col-25">
+                          <div class="modal-container">
+                            <h4 class="price">Cart
+                                <i class="fa fa-shopping-cart"></i>
+                                <b>4</b>
+                            </h4>    
+                            <p><a href="#">Mini Cheeseburgers</a> <span class="price">$9.00</span></p>
+                            <p><a href="#">Grilled Cheese</a> <span class="price">$9.00</span></p>
+                            <p><a href="#">Chicken Tenders</a> <span class="price">$9.00</span></p>
+                            <p><a href="#">PB and J</a> <span class="price">$9.00</span></p>
+                            <br>
+                            <hr>
+                            <p style="color: #000;">Total <span class="price"><b>$36.00</b></span></p>
+                          </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+    </div> <!--Main Menu End-->
+</div><!--Container Flex End-->
+<!--Footer-->
+<footer id="footer" class="footer">
+        <div class="w-layout-grid footer-grid">
+            <div class="footer-column" style="text-align: center;">
+                <h2 class="footer-title" style="margin: 10px;">Hours of Operation</h2>
+                <p class="footer-item">
+                    <strong>Monday to Thursday</strong>
+                    <br>
+                    <span style="font-size: 15px;">11:00am - 9:00pm</span>
+                </p>
+                <p class="footer-item">
+                    <strong>Friday &amp; Saturday</strong>
+                    <br>
+                    <span style="font-size: 15px;">11:00am - 10:00pm</span>
+                </p>
+                <p class="footer-item">
+                    <strong>Sunday</strong>
+                    <br>
+                    <span style="font-size: 15px;">11:00am - 8:00pm</span>
+                </p>
+                <em class="footer-item">Call us for reservations and take out orders at <a href="tel:925-300-3000"> 925-300-3000</a></em>
+            </div>
+            <div class="footer-column" style="text-align: center;">
+                <h2 class="footer-title" style="margin: 10px;">Address</h2>
+                <p class="footer-item">
+                    <strong>300 First St.</strong>
+                    <br>
+                    <span style="font-size: 15px">Livermore, CA 94550</span>
+                </p>
+                <p class="footer-item" style="text-align: center;">
+                    <strong>Telephone</strong>
+                    <br>
+                    <a href="tel:925-300-3000">925-300-3000</a>
+                </p>
+                <br>
+                <div class="social-icon-wrap">
+                    <a class="social-link facebook" href="#"><i class="fa fa-facebook"></i><span></span></a>
+                    <a class="social-link twitter" href="#"><i class="fa fa-twitter"></i><span></span></a>
+                    <a class="social-link yelp" href="#"><i class="fa fa-yelp"></i><span></span></a>
+                </div>
+            </div>
+        </div>
+    <div class="footer-legal">
+    <div class="legal">&copy; 2024 All Rights Reserved</div>
+    </div>
+</footer>
+<!--JS-->
+<script type="text/javascript" src="js/order.js"></script>
+<script type="text/javascript" src="js/top.js"></script>
+</body>
+</html>
